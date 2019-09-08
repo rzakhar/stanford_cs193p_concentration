@@ -11,7 +11,7 @@ import UIKit
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
-        updateViewFromModel()
+        startNewGame()
         super.viewDidLoad()
     }
     
@@ -47,7 +47,7 @@ class ViewController: UIViewController {
         }
     }
     
-    var emojiChoices = ["🎃", "👻", "😈", "🍭", "🦇", "🧛🏻‍♀️", "🦉", "🕷", "🕸", "🍬", "⚰️", "🔮", "🎈", "✝️"]
+    var emojiChoices = [String]()
     
     var emoji = [Int:String]()
     
@@ -57,6 +57,18 @@ class ViewController: UIViewController {
             emoji[card.identifier] = emojiChoices.remove(at: randomIndex)
         }
         return emoji[card.identifier] ?? "?"
+    }
+    
+    @IBAction func touchNewGameButton() {
+        startNewGame()
+    }
+    
+    @IBAction func startNewGame() {
+        flipCount = 0
+        emojiChoices = ["🎃", "👻", "😈", "🍭", "🦇", "🧛🏻‍♀️", "🦉", "🕷", "🕸", "🍬", "⚰️", "🔮", "🎈", "✝️"]
+        emoji = [:]
+        game = ConcentrationGameModel(numberOfPairsOfCards: (cardButtons.count + 1) / 2)
+        updateViewFromModel()
     }
 }
 
