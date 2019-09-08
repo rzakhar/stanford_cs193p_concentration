@@ -91,14 +91,14 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jUe-Ih-egN">
-                                <rect key="frame" x="104" y="785" width="193" height="77"/>
+                                <rect key="frame" x="111" y="822" width="193" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wuj-S4-nuu">
-                                <rect key="frame" x="20" y="269" width="80" height="100"/>
+                                <rect key="frame" x="20" y="260" width="80" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="Button"/>
@@ -107,7 +107,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T45-pO-obs">
-                                <rect key="frame" x="117" y="269" width="80" height="100"/>
+                                <rect key="frame" x="117" y="260" width="80" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="Button"/>
@@ -116,7 +116,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vCK-Zt-z3F">
-                                <rect key="frame" x="217" y="269" width="80" height="100"/>
+                                <rect key="frame" x="217" y="260" width="80" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="Button"/>
@@ -125,12 +125,156 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ohp-ms-i9I">
-                                <rect key="frame" x="314" y="269" width="80" height="100"/>
+                                <rect key="frame" x="314" y="260" width="80" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
                                     <action selector="touchCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rn5-uh-mUU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Igf-o0-ytK">
+                                <rect key="frame" x="20" y="368" width="80" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="touchCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qCY-Za-lnU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KAI-Ke-5J9">
+                                <rect key="frame" x="117" y="368" width="80" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="touchCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="d87-e2-USW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MNa-SM-dGE">
+                                <rect key="frame" x="217" y="368" width="80" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="touchCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4YN-1I-0HX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GK8-wU-Xy1">
+                                <rect key="frame" x="314" y="368" width="80" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="touchCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kop-cn-Wcr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9nR-a5-B6e">
+                                <rect key="frame" x="20" y="476" width="80" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="touchCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HDA-yI-X4e"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jc4-0a-m9s">
+                                <rect key="frame" x="117" y="476" width="80" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="touchCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XL4-DU-goR"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vcl-fU-mNh">
+                                <rect key="frame" x="217" y="476" width="80" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="touchCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mVL-YB-HBf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kaj-zt-8pA">
+                                <rect key="frame" x="314" y="476" width="80" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="touchCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OXZ-cd-VGC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FSS-6J-TN1">
+                                <rect key="frame" x="20" y="584" width="80" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="touchCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wwB-8U-fQ2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AcX-ss-zsn">
+                                <rect key="frame" x="117" y="584" width="80" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="touchCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="p1t-PI-hAS"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SHF-Z4-vEM">
+                                <rect key="frame" x="217" y="584" width="80" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="touchCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="V9i-3C-Z1a"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="soe-WM-LwW">
+                                <rect key="frame" x="314" y="584" width="80" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="touchCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3eL-Jn-C9G"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FnP-bG-IAl">
+                                <rect key="frame" x="20" y="692" width="80" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="touchCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uNL-WZ-eCP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yJb-A1-PZx">
+                                <rect key="frame" x="116" y="692" width="80" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="touchCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ve5-hU-P5m"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sWv-wb-mls">
+                                <rect key="frame" x="216" y="692" width="80" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="touchCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NpV-KN-nBe"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fQj-Wg-Hrt">
+                                <rect key="frame" x="313" y="692" width="80" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="touchCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eeB-Bq-UVu"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -139,18 +283,34 @@
                     </view>
                     <connections>
                         <outlet property="flipCountLabel" destination="jUe-Ih-egN" id="Ikv-da-REG"/>
-                        <outletCollection property="cardButtons" destination="cfK-Bi-jSR" collectionClass="NSMutableArray" id="TkW-FM-yVN"/>
-                        <outletCollection property="cardButtons" destination="Fdb-EL-WEd" collectionClass="NSMutableArray" id="rJs-hg-8j8"/>
-                        <outletCollection property="cardButtons" destination="Wuj-S4-nuu" collectionClass="NSMutableArray" id="gV2-jZ-QR1"/>
-                        <outletCollection property="cardButtons" destination="fIi-ga-Lbx" collectionClass="NSMutableArray" id="x7w-k0-xmk"/>
-                        <outletCollection property="cardButtons" destination="8H6-xJ-k5O" collectionClass="NSMutableArray" id="QUZ-kg-N6Y"/>
-                        <outletCollection property="cardButtons" destination="TK3-WV-wiL" collectionClass="NSMutableArray" id="L30-JW-6Nx"/>
-                        <outletCollection property="cardButtons" destination="bqC-sg-1cg" collectionClass="NSMutableArray" id="tcU-Kr-Bhf"/>
-                        <outletCollection property="cardButtons" destination="WWY-oU-AWt" collectionClass="NSMutableArray" id="yoi-qg-gGH"/>
-                        <outletCollection property="cardButtons" destination="4JP-AJ-6v8" collectionClass="NSMutableArray" id="rs9-hl-jFS"/>
-                        <outletCollection property="cardButtons" destination="T45-pO-obs" collectionClass="NSMutableArray" id="skB-ur-vyj"/>
                         <outletCollection property="cardButtons" destination="vCK-Zt-z3F" collectionClass="NSMutableArray" id="3Kr-kq-SUU"/>
                         <outletCollection property="cardButtons" destination="ohp-ms-i9I" collectionClass="NSMutableArray" id="2qH-CF-otQ"/>
+                        <outletCollection property="cardButtons" destination="fQj-Wg-Hrt" collectionClass="NSMutableArray" id="8io-vM-nVD"/>
+                        <outletCollection property="cardButtons" destination="sWv-wb-mls" collectionClass="NSMutableArray" id="RAI-uw-pNq"/>
+                        <outletCollection property="cardButtons" destination="cfK-Bi-jSR" collectionClass="NSMutableArray" id="Gar-aw-Dil"/>
+                        <outletCollection property="cardButtons" destination="Fdb-EL-WEd" collectionClass="NSMutableArray" id="EJv-vj-iIl"/>
+                        <outletCollection property="cardButtons" destination="fIi-ga-Lbx" collectionClass="NSMutableArray" id="ndQ-5c-QNw"/>
+                        <outletCollection property="cardButtons" destination="8H6-xJ-k5O" collectionClass="NSMutableArray" id="xVS-Gm-FNx"/>
+                        <outletCollection property="cardButtons" destination="TK3-WV-wiL" collectionClass="NSMutableArray" id="gIH-Qt-RFL"/>
+                        <outletCollection property="cardButtons" destination="bqC-sg-1cg" collectionClass="NSMutableArray" id="MAW-IX-9qQ"/>
+                        <outletCollection property="cardButtons" destination="WWY-oU-AWt" collectionClass="NSMutableArray" id="Kkc-ql-zcf"/>
+                        <outletCollection property="cardButtons" destination="4JP-AJ-6v8" collectionClass="NSMutableArray" id="GhP-0R-CGo"/>
+                        <outletCollection property="cardButtons" destination="Wuj-S4-nuu" collectionClass="NSMutableArray" id="WRp-vr-1Db"/>
+                        <outletCollection property="cardButtons" destination="T45-pO-obs" collectionClass="NSMutableArray" id="iJu-y8-qbK"/>
+                        <outletCollection property="cardButtons" destination="Igf-o0-ytK" collectionClass="NSMutableArray" id="pVW-7B-xHl"/>
+                        <outletCollection property="cardButtons" destination="KAI-Ke-5J9" collectionClass="NSMutableArray" id="xHa-ja-SiM"/>
+                        <outletCollection property="cardButtons" destination="MNa-SM-dGE" collectionClass="NSMutableArray" id="LAI-8T-TcW"/>
+                        <outletCollection property="cardButtons" destination="GK8-wU-Xy1" collectionClass="NSMutableArray" id="khe-9R-VOp"/>
+                        <outletCollection property="cardButtons" destination="9nR-a5-B6e" collectionClass="NSMutableArray" id="dzx-wf-UMM"/>
+                        <outletCollection property="cardButtons" destination="jc4-0a-m9s" collectionClass="NSMutableArray" id="lYV-3p-qDo"/>
+                        <outletCollection property="cardButtons" destination="vcl-fU-mNh" collectionClass="NSMutableArray" id="1CU-2j-pQV"/>
+                        <outletCollection property="cardButtons" destination="Kaj-zt-8pA" collectionClass="NSMutableArray" id="LOO-Yc-Ndd"/>
+                        <outletCollection property="cardButtons" destination="FSS-6J-TN1" collectionClass="NSMutableArray" id="9gd-UB-RJY"/>
+                        <outletCollection property="cardButtons" destination="AcX-ss-zsn" collectionClass="NSMutableArray" id="54y-LZ-lSg"/>
+                        <outletCollection property="cardButtons" destination="SHF-Z4-vEM" collectionClass="NSMutableArray" id="U0J-Ff-WNY"/>
+                        <outletCollection property="cardButtons" destination="soe-WM-LwW" collectionClass="NSMutableArray" id="hWd-dK-yB6"/>
+                        <outletCollection property="cardButtons" destination="FnP-bG-IAl" collectionClass="NSMutableArray" id="A4n-RV-mWb"/>
+                        <outletCollection property="cardButtons" destination="yJb-A1-PZx" collectionClass="NSMutableArray" id="kwi-PE-C2U"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
