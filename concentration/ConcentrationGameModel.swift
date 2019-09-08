@@ -48,6 +48,6 @@ class ConcentrationGameModel {
             let card = Card()
             cards += [card, card]
         }
-        //cards.shuffle()
+        cards.shuffle()
     }
 }
