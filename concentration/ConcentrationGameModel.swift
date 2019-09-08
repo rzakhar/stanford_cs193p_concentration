@@ -12,6 +12,8 @@ class ConcentrationGameModel {
     
     var cards = [Card]()
     
+    var timeStarted = Date.timeIntervalSinceReferenceDate
+    
     var score = 0
     
     var indexOfOneAndOnlyFaceUpCard: Int?
@@ -20,9 +22,10 @@ class ConcentrationGameModel {
         if !cards[index].isMatched {
             if let matchIndex = indexOfOneAndOnlyFaceUpCard, matchIndex != index {
                 if cards[matchIndex].identifier == cards[index].identifier {
+                    let timeNow = Date.timeIntervalSinceReferenceDate
                     cards[matchIndex].isMatched = true
                     cards[index].isMatched = true
-                    score += 2
+                    score += 100 / Int(timeNow - timeStarted)
                 }
                 indexOfOneAndOnlyFaceUpCard = nil
             } else {
