@@ -65,7 +65,7 @@ class ViewController: UIViewController {
     
     @IBAction func startNewGame() {
         flipCount = 0
-        emojiChoices = ["🎃", "👻", "😈", "🍭", "🦇", "🧛🏻‍♀️", "🦉", "🕷", "🕸", "🍬", "⚰️", "🔮", "🎈", "✝️"]
+        emojiChoices = themes.randomElement() ?? []
         emoji = [:]
         game = ConcentrationGameModel(numberOfPairsOfCards: (cardButtons.count + 1) / 2)
         updateViewFromModel()

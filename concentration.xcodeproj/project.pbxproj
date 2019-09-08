@@ -14,6 +14,7 @@
 		038D6EDE232536CE007ECD9D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 038D6EDC232536CE007ECD9D /* LaunchScreen.storyboard */; };
 		038D6EE623253C5C007ECD9D /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 038D6EE523253C5C007ECD9D /* Card.swift */; };
 		038D6EE823253CCE007ECD9D /* ConcentrationGameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 038D6EE723253CCE007ECD9D /* ConcentrationGameModel.swift */; };
+		038D6EEA23256FC2007ECD9D /* Themes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 038D6EE923256FC2007ECD9D /* Themes.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		038D6EDF232536CE007ECD9D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		038D6EE523253C5C007ECD9D /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		038D6EE723253CCE007ECD9D /* ConcentrationGameModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcentrationGameModel.swift; sourceTree = "<group>"; };
+		038D6EE923256FC2007ECD9D /* Themes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Themes.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				038D6EDF232536CE007ECD9D /* Info.plist */,
 				038D6EE523253C5C007ECD9D /* Card.swift */,
 				038D6EE723253CCE007ECD9D /* ConcentrationGameModel.swift */,
+				038D6EE923256FC2007ECD9D /* Themes.swift */,
 			);
 			path = concentration;
 			sourceTree = "<group>";
@@ -144,6 +147,7 @@
 				038D6ED6232536CA007ECD9D /* ViewController.swift in Sources */,
 				038D6EE823253CCE007ECD9D /* ConcentrationGameModel.swift in Sources */,
 				038D6EE623253C5C007ECD9D /* Card.swift in Sources */,
+				038D6EEA23256FC2007ECD9D /* Themes.swift in Sources */,
 				038D6ED4232536CA007ECD9D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
