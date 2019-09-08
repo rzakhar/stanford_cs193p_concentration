@@ -25,7 +25,7 @@ class ConcentrationGameModel {
                     let timeNow = Date.timeIntervalSinceReferenceDate
                     cards[matchIndex].isMatched = true
                     cards[index].isMatched = true
-                    score += 100 / Int(timeNow - timeStarted)
+                    score += 100 / Int(timeNow - timeStarted + 1)
                 }
                 indexOfOneAndOnlyFaceUpCard = nil
             } else {
@@ -48,6 +48,6 @@ class ConcentrationGameModel {
             let card = Card()
             cards += [card, card]
         }
-        cards.shuffle()
+        //cards.shuffle()
     }
 }
