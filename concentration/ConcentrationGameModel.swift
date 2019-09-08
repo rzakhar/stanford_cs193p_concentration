@@ -12,6 +12,8 @@ class ConcentrationGameModel {
     
     var cards = [Card]()
     
+    var score = 0
+    
     var indexOfOneAndOnlyFaceUpCard: Int?
     
     func chooseCard(at index: Int) {
@@ -20,17 +22,21 @@ class ConcentrationGameModel {
                 if cards[matchIndex].identifier == cards[index].identifier {
                     cards[matchIndex].isMatched = true
                     cards[index].isMatched = true
+                    score += 2
                 }
-                cards[index].isFaceUp = true
                 indexOfOneAndOnlyFaceUpCard = nil
             } else {
                 // either no cards or two cards are face up
                 for flipDownIndex in cards.indices {
                     cards[flipDownIndex].isFaceUp = false
                 }
-                cards[index].isFaceUp = true
                 indexOfOneAndOnlyFaceUpCard = index
             }
+            cards[index].isFaceUp = true
+            if cards[index].wasPickedBefore {
+                score -= 1
+            }
+            cards[index].wasPickedBefore = true
         }
     }
     

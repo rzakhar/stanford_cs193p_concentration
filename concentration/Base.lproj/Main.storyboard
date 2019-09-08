@@ -294,7 +294,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="flipCountLabel" destination="jUe-Ih-egN" id="Ikv-da-REG"/>
+                        <outlet property="scoreLabel" destination="jUe-Ih-egN" id="Ikv-da-REG"/>
                         <outletCollection property="cardButtons" destination="vCK-Zt-z3F" collectionClass="NSMutableArray" id="3Kr-kq-SUU"/>
                         <outletCollection property="cardButtons" destination="ohp-ms-i9I" collectionClass="NSMutableArray" id="2qH-CF-otQ"/>
                         <outletCollection property="cardButtons" destination="fQj-Wg-Hrt" collectionClass="NSMutableArray" id="8io-vM-nVD"/>

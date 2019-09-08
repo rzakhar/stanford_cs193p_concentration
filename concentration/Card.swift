@@ -11,6 +11,7 @@ import Foundation
 struct Card
 {
     var isFaceUp = false
+    var wasPickedBefore = false
     var isMatched = false
     var identifier: Int
     
