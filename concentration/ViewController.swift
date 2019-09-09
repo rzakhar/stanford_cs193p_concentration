@@ -15,7 +15,9 @@ class ViewController: UIViewController {
         super.viewDidLoad()
     }
     
-    lazy var game = ConcentrationGameModel(numberOfPairsOfCards: (cardButtons.count + 1) / 2)
+    lazy var game = ConcentrationGameModel(numberOfPairsOfCards: numberOfPairsOfCards)
+    
+    var numberOfPairsOfCards: Int { return (cardButtons.count + 1) / 2 }
     
     @IBOutlet weak var scoreLabel: UILabel!
     
@@ -73,7 +75,7 @@ class ViewController: UIViewController {
         emojiChoices = theme.emoji
         view.backgroundColor = theme.backgroundColor
         emoji = [:]
-        game = ConcentrationGameModel(numberOfPairsOfCards: (cardButtons.count + 1) / 2)
+        game = ConcentrationGameModel(numberOfPairsOfCards: numberOfPairsOfCards)
         updateViewFromModel()
     }
 }
