@@ -15,17 +15,17 @@ class ViewController: UIViewController {
         super.viewDidLoad()
     }
     
-    lazy var game = ConcentrationGameModel(numberOfPairsOfCards: numberOfPairsOfCards)
+    private lazy var game = ConcentrationGameModel(numberOfPairsOfCards: numberOfPairsOfCards)
     
     var numberOfPairsOfCards: Int { return (cardButtons.count + 1) / 2 }
     
-    @IBOutlet weak var scoreLabel: UILabel!
+    @IBOutlet private weak var scoreLabel: UILabel!
     
-    @IBOutlet var cardButtons: [UIButton]!
+    @IBOutlet private var cardButtons: [UIButton]!
     
-    var theme: Theme!
+    private(set) var theme: Theme!
     
-    @IBAction func touchCard(_ sender: UIButton) {
+    @IBAction private func touchCard(_ sender: UIButton) {
         if let cardNumber = cardButtons.firstIndex(of: sender) {
             game.chooseCard(at: cardNumber)
             updateViewFromModel()
@@ -34,7 +34,7 @@ class ViewController: UIViewController {
         }
     }
     
-    func updateViewFromModel() {
+    private func updateViewFromModel() {
         for index in cardButtons.indices {
             let button = cardButtons[index]
             let card = game.cards[index]
@@ -49,23 +49,23 @@ class ViewController: UIViewController {
         scoreLabel.text = "Score: \(game.score)"
     }
     
-    var emojiChoices = [String]()
+    private var emojiChoices = [String]()
     
-    var emoji = [Int:String]()
+    private var emoji = [Int:String]()
     
-    func emoji(for card: Card) -> String {
+    private func emoji(for card: Card) -> String {
         if emoji[card.identifier] == nil, emojiChoices.count > 0 {
-            let randomIndex = Int(arc4random_uniform(UInt32(emojiChoices.count)))
+            let randomIndex = emojiChoices.count.arc4random
             emoji[card.identifier] = emojiChoices.remove(at: randomIndex)
         }
         return emoji[card.identifier] ?? "?"
     }
     
-    @IBAction func touchNewGameButton() {
+    @IBAction private func touchNewGameButton() {
         startNewGame()
     }
     
-    @IBAction func startNewGame() {
+    private func startNewGame() {
         theme = themes.randomElement()
         guard theme != nil else {
             print("Theme is nil")

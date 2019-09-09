@@ -15,6 +15,7 @@
 		038D6EE623253C5C007ECD9D /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 038D6EE523253C5C007ECD9D /* Card.swift */; };
 		038D6EE823253CCE007ECD9D /* ConcentrationGameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 038D6EE723253CCE007ECD9D /* ConcentrationGameModel.swift */; };
 		038D6EEA23256FC2007ECD9D /* Themes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 038D6EE923256FC2007ECD9D /* Themes.swift */; };
+		038D6EEC2326F8D4007ECD9D /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 038D6EEB2326F8D4007ECD9D /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		038D6EE523253C5C007ECD9D /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		038D6EE723253CCE007ECD9D /* ConcentrationGameModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcentrationGameModel.swift; sourceTree = "<group>"; };
 		038D6EE923256FC2007ECD9D /* Themes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Themes.swift; sourceTree = "<group>"; };
+		038D6EEB2326F8D4007ECD9D /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 				038D6EE523253C5C007ECD9D /* Card.swift */,
 				038D6EE723253CCE007ECD9D /* ConcentrationGameModel.swift */,
 				038D6EE923256FC2007ECD9D /* Themes.swift */,
+				038D6EEB2326F8D4007ECD9D /* Extensions.swift */,
 			);
 			path = concentration;
 			sourceTree = "<group>";
@@ -145,6 +148,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				038D6ED6232536CA007ECD9D /* ViewController.swift in Sources */,
+				038D6EEC2326F8D4007ECD9D /* Extensions.swift in Sources */,
 				038D6EE823253CCE007ECD9D /* ConcentrationGameModel.swift in Sources */,
 				038D6EE623253C5C007ECD9D /* Card.swift in Sources */,
 				038D6EEA23256FC2007ECD9D /* Themes.swift in Sources */,

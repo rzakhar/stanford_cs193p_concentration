@@ -10,13 +10,13 @@ import Foundation
 
 class ConcentrationGameModel {
     
-    var cards = [Card]()
+    private(set) var cards = [Card]()
     
-    var timeStarted = Date.timeIntervalSinceReferenceDate
+    private var timeStarted = Date.timeIntervalSinceReferenceDate
     
-    var score = 0
+    private(set) var score = 0
     
-    var indexOfOneAndOnlyFaceUpCard: Int? {
+    private var indexOfOneAndOnlyFaceUpCard: Int? {
         get {
             var foundIndex: Int?
             for index in cards.indices {
@@ -38,7 +38,10 @@ class ConcentrationGameModel {
             }
         }
     }
+    
     func chooseCard(at index: Int) {
+        assert(cards.indices.contains(index),
+               "Concentration.chooseCard(at: \(index): Chosen index not in the cards")
         if !cards[index].isMatched {
             if let matchIndex = indexOfOneAndOnlyFaceUpCard, matchIndex != index {
                 if cards[matchIndex].identifier == cards[index].identifier {
@@ -60,6 +63,8 @@ class ConcentrationGameModel {
     }
     
     init(numberOfPairsOfCards: Int) {
+        assert(numberOfPairsOfCards > 0,
+               "Concentration.init(\(numberOfPairsOfCards): Not positive number of pairs")
         for _ in 1...numberOfPairsOfCards {
             let card = Card()
             cards += [card, card]
