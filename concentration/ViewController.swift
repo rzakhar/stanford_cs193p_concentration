@@ -49,14 +49,15 @@ class ViewController: UIViewController {
         scoreLabel.text = "Score: \(game.score)"
     }
     
-    private var emojiChoices = [String]()
+    private var emojiChoices = String()
     
     private var emoji = [Card:String]()
     
     private func emoji(for card: Card) -> String {
         if emoji[card] == nil, emojiChoices.count > 0 {
-            let randomIndex = emojiChoices.count.arc4random
-            emoji[card] = emojiChoices.remove(at: randomIndex)
+            let randomIndex = emojiChoices.index(emojiChoices.startIndex,
+                                                 offsetBy: emojiChoices.count.arc4random)
+            emoji[card] = String(emojiChoices.remove(at: randomIndex))
         }
         return emoji[card] ?? "?"
     }
@@ -72,7 +73,7 @@ class ViewController: UIViewController {
             
             return
         }
-        emojiChoices = theme.emoji
+        emojiChoices = theme.emojiString
         view.backgroundColor = theme.backgroundColor
         emoji = [:]
         game = ConcentrationGameModel(numberOfPairsOfCards: numberOfPairsOfCards)
