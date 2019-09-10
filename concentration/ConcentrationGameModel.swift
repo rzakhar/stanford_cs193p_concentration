@@ -8,7 +8,7 @@
 
 import Foundation
 
-class ConcentrationGameModel {
+struct ConcentrationGameModel {
     
     private(set) var cards = [Card]()
     
@@ -39,7 +39,7 @@ class ConcentrationGameModel {
         }
     }
     
-    func chooseCard(at index: Int) {
+    mutating func chooseCard(at index: Int) {
         assert(cards.indices.contains(index),
                "Concentration.chooseCard(at: \(index): Chosen index not in the cards")
         if !cards[index].isMatched {
