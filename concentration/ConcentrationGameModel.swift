@@ -18,19 +18,7 @@ struct ConcentrationGameModel {
     
     private var indexOfOneAndOnlyFaceUpCard: Int? {
         get {
-            var foundIndex: Int?
-            for index in cards.indices {
-                if cards[index].isFaceUp {
-                    if foundIndex == nil {
-                        foundIndex = index
-                    } else {
-                        
-                        return nil
-                    }
-                }
-            }
-            
-            return foundIndex
+            return cards.indices.filter {cards[$0].isFaceUp }.oneAndOnly
         }
         set {
             for index in cards.indices {

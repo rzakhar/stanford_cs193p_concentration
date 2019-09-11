@@ -9,8 +9,13 @@
 import Foundation
 
 extension Int {
-    
     var arc4random: Int {
         return Int(arc4random_uniform(UInt32(self)))
+    }
+}
+
+extension Collection {
+    var oneAndOnly: Element? {
+        return count == 1 ? first : nil
     }
 }
