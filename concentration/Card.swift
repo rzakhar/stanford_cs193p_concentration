@@ -14,7 +14,7 @@ struct Card: Hashable {
         hasher.combine(identifier)
     }
 
-    static func ==(lhs: Card, rhs: Card) -> Bool {
+    static func == (lhs: Card, rhs: Card) -> Bool {
         return lhs.identifier == rhs.identifier
     }
 

@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  ConcentrationViewController.swift
 //  concentration
 //
 //  Created by Roman Zakharov on 08/09/2019.
@@ -8,13 +8,18 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ConcentrationViewController: UIViewController {
 
     override func viewDidLoad() {
         startNewGame()
         super.viewDidLoad()
+        if theme == nil {
+            scoreLabel.isHidden = true
+            newGameButton.isHidden = true
+        }
     }
 
+    @IBOutlet weak var newGameButton: UIButton!
     private lazy var game = ConcentrationGameModel(numberOfPairsOfCards: numberOfPairsOfCards)
 
     var numberOfPairsOfCards: Int { return (cardButtons.count + 1) / 2 }
@@ -23,10 +28,17 @@ class ViewController: UIViewController {
 
     @IBOutlet private var cardButtons: [UIButton]!
 
-    private(set) var theme: Theme!
+    var theme: Theme? = nil {
+        didSet {
+            emojiChoices = theme?.emojiString ?? ""
+            emoji = [:]
+            updateViewFromModel()
+        }
+    }
 
     @IBAction private func touchCard(_ sender: UIButton) {
-        if let cardNumber = cardButtons.firstIndex(of: sender) {
+        if let cardNumber = cardButtons.firstIndex(of: sender),
+            theme != nil {
             game.chooseCard(at: cardNumber)
             updateViewFromModel()
         } else {
@@ -35,18 +47,23 @@ class ViewController: UIViewController {
     }
 
     private func updateViewFromModel() {
-        for index in cardButtons.indices {
-            let button = cardButtons[index]
-            let card = game.cards[index]
-            if card.isFaceUp {
-                button.setTitle(emoji(for: card), for: .normal)
-                button.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
-            } else {
-                button.setTitle("", for: .normal)
-                button.backgroundColor = card.isMatched ? #colorLiteral(red: 1, green: 1, blue: 1, alpha: 0) : theme.cardBackColor
+        if cardButtons != nil {
+            for index in cardButtons.indices {
+                let button = cardButtons[index]
+                let card = game.cards[index]
+                if card.isFaceUp {
+                    button.setTitle(emoji(for: card), for: .normal)
+                    button.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
+                } else {
+                    button.setTitle("", for: .normal)
+                    button.backgroundColor = card.isMatched ? #colorLiteral(red: 1, green: 1, blue: 1, alpha: 0) : theme?.cardBackColor
+                }
             }
+            scoreLabel.text = "Score: \(game.score)"
+            scoreLabel.isHidden = false
+            newGameButton.isHidden = false
         }
-        scoreLabel.text = "Score: \(game.score)"
+        view.backgroundColor = theme?.backgroundColor
     }
 
     private var emojiChoices = String()
@@ -67,15 +84,6 @@ class ViewController: UIViewController {
     }
 
     private func startNewGame() {
-        theme = themes.randomElement()
-        guard theme != nil else {
-            print("Theme is nil")
-
-            return
-        }
-        emojiChoices = theme.emojiString
-        view.backgroundColor = theme.backgroundColor
-        emoji = [:]
         game = ConcentrationGameModel(numberOfPairsOfCards: numberOfPairsOfCards)
         updateViewFromModel()
     }
