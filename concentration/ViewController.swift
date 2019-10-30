@@ -14,17 +14,17 @@ class ViewController: UIViewController {
         startNewGame()
         super.viewDidLoad()
     }
-    
+
     private lazy var game = ConcentrationGameModel(numberOfPairsOfCards: numberOfPairsOfCards)
-    
+
     var numberOfPairsOfCards: Int { return (cardButtons.count + 1) / 2 }
-    
+
     @IBOutlet private weak var scoreLabel: UILabel!
-    
+
     @IBOutlet private var cardButtons: [UIButton]!
-    
+
     private(set) var theme: Theme!
-    
+
     @IBAction private func touchCard(_ sender: UIButton) {
         if let cardNumber = cardButtons.firstIndex(of: sender) {
             game.chooseCard(at: cardNumber)
@@ -33,7 +33,7 @@ class ViewController: UIViewController {
             print("Chosen card was not in cardButtons")
         }
     }
-    
+
     private func updateViewFromModel() {
         for index in cardButtons.indices {
             let button = cardButtons[index]
@@ -48,11 +48,11 @@ class ViewController: UIViewController {
         }
         scoreLabel.text = "Score: \(game.score)"
     }
-    
+
     private var emojiChoices = String()
-    
-    private var emoji = [Card:String]()
-    
+
+    private var emoji = [Card: String]()
+
     private func emoji(for card: Card) -> String {
         if emoji[card] == nil, emojiChoices.count > 0 {
             let randomIndex = emojiChoices.index(emojiChoices.startIndex,
@@ -61,16 +61,16 @@ class ViewController: UIViewController {
         }
         return emoji[card] ?? "?"
     }
-    
+
     @IBAction private func touchNewGameButton() {
         startNewGame()
     }
-    
+
     private func startNewGame() {
         theme = themes.randomElement()
         guard theme != nil else {
             print("Theme is nil")
-            
+
             return
         }
         emojiChoices = theme.emojiString
@@ -80,4 +80,3 @@ class ViewController: UIViewController {
         updateViewFromModel()
     }
 }
-

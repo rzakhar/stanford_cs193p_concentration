@@ -9,13 +9,13 @@
 import Foundation
 
 struct ConcentrationGameModel {
-    
+
     private(set) var cards = [Card]()
-    
+
     private var timeStarted = Date.timeIntervalSinceReferenceDate
-    
+
     private(set) var score = 0
-    
+
     private var indexOfOneAndOnlyFaceUpCard: Int? {
         get {
             return cards.indices.filter {cards[$0].isFaceUp }.oneAndOnly
@@ -26,7 +26,7 @@ struct ConcentrationGameModel {
             }
         }
     }
-    
+
     mutating func chooseCard(at index: Int) {
         assert(cards.indices.contains(index),
                "Concentration.chooseCard(at: \(index): Chosen index not in the cards")
@@ -49,7 +49,7 @@ struct ConcentrationGameModel {
             cards[index].wasPickedBefore = true
         }
     }
-    
+
     init(numberOfPairsOfCards: Int) {
         assert(numberOfPairsOfCards > 0,
                "Concentration.init(\(numberOfPairsOfCards): Not positive number of pairs")
